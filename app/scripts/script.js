@@ -1,3 +1,7 @@
+/*global $:false, jQuery:false */
+
+'use strict';
+
 (function ($) {
   // If project has releases.
   if ($('.view-project-release-download-table').length) {
