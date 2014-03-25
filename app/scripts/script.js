@@ -9,7 +9,7 @@
     if (name) {
       // Add table headers.
       $('.view-project-release-download-table table thead tr').each(function() {
-        $(this).append('<th class="views-field-simplytest">Test</th>')
+        $(this).append('<th class="views-field-simplytest">Test</th>');
       });
 
       // Add link for simplytest.
