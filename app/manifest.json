@@ -1,27 +1,30 @@
 {
-    "name": "__MSG_appName__",
-    "version": "0.0.2",
-    "manifest_version": 2,
-    "description": "__MSG_appDescription__",
-    "icons": {
-        "16": "images/icon-16.png",
-        "128": "images/icon-128.png"
-    },
-    "default_locale": "en",
-    "content_scripts": [
-        {
-            "matches": [
-                "*://*.drupal.org/project/*",
-                "*://*.devdrupal.org/project/*"
-            ],
-            "js": [
-                "scripts/jquery.min.js",
-                "scripts/script.js"
-            ]
-        }
-    ],
-    "permissions": [
+  "name": "__MSG_appName__",
+  "version": "0.0.2",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "matches": [
         "*://*.drupal.org/project/*",
         "*://*.devdrupal.org/project/*"
-    ]
+      ],
+      "js": [
+        "scripts/jquery.min.js",
+        "scripts/script.js"
+      ],
+      "css": [
+        "css/style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "*://*.drupal.org/project/*",
+    "*://*.devdrupal.org/project/*"
+  ]
 }

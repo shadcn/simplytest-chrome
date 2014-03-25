@@ -8,9 +8,9 @@
     var name = getProjectNameFromURL(url);
     if (name) {
       // Add table headers.
-      // $('.view-project-release-download-table table thead tr').each(function() {
-      //   $(this).append('<th>Test</th>')
-      // });
+      $('.view-project-release-download-table table thead tr').each(function() {
+        $(this).append('<th class="views-field-simplytest">Test</th>')
+      });
 
       // Add link for simplytest.
       $('.view-project-release-download-table table tbody tr').each(function() {
@@ -20,10 +20,10 @@
         var simplytestURL = getSimplytestURL(name, version);
 
         // Build the html to display.
-        var link = '<a href="' + simplytestURL + '" class="simplytest" target="_blank">Simplytest</a>';
-        // var html = '<td class="views-field">' + link + '</td>';
+        var link = '<a href="' + simplytestURL + '" class="link-simplytest" target="_blank">Simplytest</a>';
+        var html = '<td class="views-field-simplytest">' + link + '</td>';
 
-        $(this).find('.views-field-view-node').append(link);
+        $(this).append(html);
       });
     }
   }

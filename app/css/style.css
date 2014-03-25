@@ -1,0 +1,35 @@
+/**
+ * Style for Simplytest.me chrome extension.
+ */
+.view-project-release-download-table td.views-field-field-release-version {
+  width: 15% !important;
+}
+.view-project-release-download-table .views-field-extension {
+  width: 28% !important;
+}
+.view-project-release-download-table .views-field-simplytest {
+  width: 18% !important;
+  padding: 3px 0;
+}
+.view-project-release-download-table .views-field-view-node {
+  width: 10% !important;
+}
+.link-simplytest,
+.link-simplytest:visited {
+  display: inline-block;
+  background-color: #145179;
+  color: white;
+  padding: 3px 5px;
+  text-decoration: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.link-simplytest:hover,
+.link-simplytest:focus,
+.link-simplytest:active {
+  background-color: #1686BD;
+  color: white;
+  text-decoration: none;
+}
