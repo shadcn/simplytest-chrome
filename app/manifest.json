@@ -1,6 +1,6 @@
 {
   "name": "__MSG_appName__",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "__MSG_appDescription__",
   "icons": {
@@ -12,15 +12,15 @@
   "content_scripts": [
     {
       "matches": [
-          "*://*.drupal.org/project/*",
-          "*://*.devdrupal.org/project/*"
+        "*://*.drupal.org/project/*",
+        "*://*.devdrupal.org/project/*"
       ],
       "js": [
-          "scripts/jquery.min.js",
-          "scripts/script.js"
+        "scripts/jquery.min.js",
+        "scripts/script.js"
       ],
       "css": [
-          "css/style.css"
+        "css/style.css"
       ]
     }
   ],
