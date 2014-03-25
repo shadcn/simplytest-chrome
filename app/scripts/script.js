@@ -22,7 +22,7 @@
         var simplytestURL = getSimplytestURL(name, version);
 
         // Build the html to display.
-        var link = '<a href="' + simplytestURL + '" class="simplytest">Simplytest</a>';
+        var link = '<a href="' + simplytestURL + '" class="simplytest" target="_blank">Simplytest</a>';
         // var html = '<td class="views-field">' + link + '</td>';
 
         $(this).find('.views-field-view-node').append(link);
