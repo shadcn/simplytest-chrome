@@ -30,7 +30,7 @@
 
   // Performs a regex match to get a project name from the url.
   function getProjectNameFromURL(url) {
-    var match = url.match(/\:\/\/drupal\.org\/project\/([a-z0-9\_]*)/m);
+    var match = url.match(/\:\/\/[www\.]*drupal\.org\/project\/([a-z0-9\_]*)/m);
     if (match.length) {
       return match[1];
     }
